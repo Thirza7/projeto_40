@@ -1,0 +1,40 @@
+<!DOCTYPE html><html lang="en"><head>
+  <script src="libraries/p5.js"></script>
+  <script src="libraries/p5.dom.min.js"></script>
+  <script src="libraries/matter.js"></script>
+  <script src="libraries/p5.play.js"></script>
+
+  <script src="js/form.js"></script>
+<!--Link game.js e player.js-->
+<script src="js/player.js"></script>
+<script src="js/game.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+    //código que conecta o jogo no banco de dados do firebase
+    const firebaseConfig = {
+  apiKey: "AIzaSyBhm9-uVWomKEbIeyTjYirKdqvSXMHL3ZU",
+  authDomain: "carros-24171.firebaseapp.com",
+  databaseURL: "https://carros-24171-default-rtdb.firebaseio.com",
+  projectId: "carros-24171",
+  storageBucket: "carros-24171.appspot.com",
+  messagingSenderId: "345839906203",
+  appId: "1:345839906203:web:189b9e62a72840a18a453e",
+  measurementId: "G-VT0F1P6NS3"
+};
+
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+
+</head>
+<body>
+  <script src="sketch.js"></script>
+
+
+
+</body></html>
